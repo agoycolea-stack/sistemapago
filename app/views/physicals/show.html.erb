@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @physical.name %>
+</p>
+
+<p>
+  <strong>Stock:</strong>
+  <%= @physical.stock %>
+</p>
+
+<%= link_to 'Edit', edit_physical_path(@physical) %> |
+<%= link_to 'Back', physicals_path %>

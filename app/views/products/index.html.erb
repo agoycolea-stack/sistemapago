@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <% @products.each do |product| %>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <div class="card-header">
+            <h6 class="card-title"><%= product.name %></h3>
+          </div>
+          <div class="card-body">
+            <p><%= number_to_currency(product.price) %></p>
+          </div>
+          <div class="card-footer">
+            <%= link_to 'Agregar al carrito',add_product_purchase_order_index_path(product_id: product.id),method: :post, class: "btn btn-primary" %>          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+

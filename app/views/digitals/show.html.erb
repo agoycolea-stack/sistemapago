@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @digital.name %>
+</p>
+
+<p>
+  <strong>Stock:</strong>
+  <%= @digital.stock %>
+</p>
+
+<%= link_to 'Edit', edit_digital_path(@digital) %> |
+<%= link_to 'Back', digitals_path %>

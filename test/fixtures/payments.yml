@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: 1
+  paid_at: 2020-11-19 22:02:54
+  payment_method: one
+
+two:
+  status: 1
+  paid_at: 2020-11-19 22:02:54
+  payment_method: two
